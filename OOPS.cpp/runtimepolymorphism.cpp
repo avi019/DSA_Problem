@@ -1,4 +1,9 @@
-//Function overriding
+/* 1. unction overriding => When parent and child both contain same function with 
+ different implementaion.*/
+
+// 2. it depend upon inheritance 
+// yha humm jis class ka object bnayengey usse class ka 
+//function call hoga which is known as overriding other one
 #include<iostream>
 using namespace std;
 
@@ -22,8 +27,10 @@ class child :public Parent{
  int main()
  {
     child t2; //constructor call automatically
+    t2.getinfo();
+    Parent p1;
+    p1.getinfo();
 
     return 0;
 
  }
- //constructor overloading is possible here and this is also called Polymorphism 
