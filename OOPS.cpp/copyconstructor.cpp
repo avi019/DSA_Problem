@@ -21,7 +21,7 @@ class teacher {
         this->salary=salary;
 
     }
-    // copy constructor
+    //copy constructor
      teacher(teacher &orgobj)//pass by reference 
     {
         cout<<" i am custom copy constructor "<<endl;

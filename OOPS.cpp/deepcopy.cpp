@@ -21,7 +21,7 @@ class Student {
     { 
         cout<<" i am custom deep copy constructor "<<endl;
         this->name=orgobj.name;
-        cgpaptr= new double;//new memory is allocated with differrnt address
+        cgpaptr= new double;//new memory is allocated with different address
         *cgpaptr=*orgobj.cgpaptr;//deep copy
     }
 
