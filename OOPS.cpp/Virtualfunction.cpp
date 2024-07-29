@@ -11,7 +11,7 @@ class Parent {
             cout<<"parent class"<<endl;
         }
         //it is called during runtime 
-        virtual void hello()//can be editable in subclass
+         void hello()//can be editable in subclass
         {
             cout<<"im from parent class "<<endl;
         }

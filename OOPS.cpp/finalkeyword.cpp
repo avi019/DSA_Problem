@@ -2,16 +2,23 @@
 using namespace std;
 //sometimes we don't need to override the virtual function in runtime polymorphism 
 // then there we are using "final" keywrod just after the virtual function so that it can't be override in derived class.
-class base final //After using "final" keyword class becom non inheritable
+  //After using "final" keyword class becom non inheritable
+//final function -> function can not be override 
+//final variable -> can not be changed 
+class base
 {
     public:
     int x;
     string name;
     
-    base()
+    base() 
     {
         this->x=100;
         this->name="PATHAK";
+    }
+    void fun()
+    {
+        cout<<"parent class "<<endl;
     }
 
 
@@ -26,6 +33,10 @@ class child : public base
     {
         this->y=x;
         this->s=s;
+    }
+     void fun()
+    {
+        cout<<"parent class "<<endl;
     }
 
 
