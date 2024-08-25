@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
- #include<bits/stdc++.h>
+
+
 #include<vector>
 int barnposition(int maxdistance,vector<int>&nums,int cow)
 {
