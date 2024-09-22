@@ -1,3 +1,10 @@
+/*Inheritance:
+          1. The capability of a class to derive properties and characteristics from another class is called Inheritance.
+          2. Inheritance is a feature or a process in which,
+             new classes are created from the existing classes. 
+             The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”. 
+             The derived class now is said to be inherited from the base class.*/
+
 // used for code reuseability .
 // When properties & member functions of base class are passed on to the derived class
 #include<iostream>
