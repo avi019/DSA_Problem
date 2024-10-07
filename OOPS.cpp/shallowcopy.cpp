@@ -13,7 +13,8 @@ class Student {
 
         this->name=name;
         cgpaptr = new double;
-        *cgpaptr=cgpa;
+       // *(this->cgpaptr)=cgpa;  both line are same
+        *cgpaptr=cgpa; //assign the value of cgpa in place of cgpaptr pointer using * (derefrencing)
 
     }
     // shallow copy constructor
@@ -21,7 +22,7 @@ class Student {
     {
         cout<<" i am custom shallow copy constructor "<<endl;
         this->name=orgobj.name;
-        this->cgpaptr=orgobj.cgpaptr;//shallow copy
+        this->cgpaptr=orgobj.cgpaptr;//shallow copy here address is passing 
     }
 
    
@@ -39,9 +40,9 @@ class Student {
  int main()
  {    
     Student t1("Avinash",8.1);
-    Student t2(t1);
-    *(t2.cgpaptr)=9.2;
-    t2.getinfo();
+    // Student t2(t1);
+    // *(t2.cgpaptr)=9.2;
+   // t2.getinfo();
     cout<<"printing t1"<<endl;
     t1.getinfo();
 

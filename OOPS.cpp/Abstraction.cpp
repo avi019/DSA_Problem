@@ -4,7 +4,7 @@ using namespace std;
 
 class shape {//abstract class 
     virtual void draw()=0; //pure virtual dunction
-    // working of abstract is to givig idea ,bluprint to subclass 
+    // working of abstract is to giving idea ,bluprint to subclass 
  
 };
 class circle :public shape{
